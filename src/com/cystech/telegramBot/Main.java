@@ -11,11 +11,11 @@ public class Main {
 		TelegramBotsApi botsApi = new TelegramBotsApi();
 		
 		try{
-			botsApi.registerBot(new PhotoBot());
+			botsApi.registerBot(new LoggingTestBot());
 		}catch(TelegramApiException e){
 			e.printStackTrace();
 		}
-		System.out.println("PhotoBot Started.");
+		System.out.println("LoggingTestBot Started.");
 	}
 	
 }
