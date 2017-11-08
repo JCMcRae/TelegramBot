@@ -27,7 +27,7 @@ public class EmojiTestBot extends TelegramLongPollingBot {
 
 			String text = update.getMessage().getText();
 			long chatId = update.getMessage().getChatId();
-			String response = ":white_check_mark:";
+			String response = ":white_check_mark: Message recieved.";
 
 			SendMessage message = new SendMessage();
 			message.setChatId(chatId);
